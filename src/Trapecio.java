@@ -1,9 +1,9 @@
 public class Trapecio implements FiguraGeometrica{
     //Trapecio Isoseles 
-    private double catetoA;
-    private double catetoB;
-    private double catetoBMayor;
-    private double altura;
+    protected double catetoA;
+    protected double catetoB;
+    protected double catetoBMayor;
+    protected double altura;
 
     public Trapecio(double catetoA, double catetoB, double catetoBMayor, double altura){
         this.catetoA=catetoA;
@@ -39,7 +39,7 @@ public class Trapecio implements FiguraGeometrica{
     }
     @Override    
     public double calcularArea(){
-        double area= ((getCatetoB() +getCatetoBMayor())*getAltura())/2;
+        double area= ((catetoB +catetoBMayor)*altura)/2;
         return area;
     }
     @Override
